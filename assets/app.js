@@ -100,7 +100,7 @@ function homeView() {
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">주요 훈련 내용</p>
-          <h2>정제·분석·자동화, 다섯 갈래로 익힙니다</h2>
+          <h2>정의·정제·분석·자동화, 다섯 갈래로 익힙니다</h2>
         </div>
         <div class="content-rows">
           ${CONTENT_ROWS.map((r, i) => `
@@ -135,7 +135,7 @@ function homeView() {
         <div class="section-head">
           <p class="eyebrow">타임테이블</p>
           <h2>하루 일정 (09:00–18:00)</h2>
-          <p class="lead">교시 사이에 짧게 쉬고, 점심은 한 시간입니다. 콜센터까지 실습 여섯 개는 모두 필수입니다.</p>
+          <p class="lead">교시 사이에 짧게 쉬고, 점심은 한 시간입니다. 데이터 정의부터 에이전트까지 실습 여섯 개는 모두 필수입니다.</p>
         </div>
         <div class="table-wrap">
           <table class="schedule">
@@ -160,7 +160,7 @@ function homeView() {
         <div class="section-head">
           <p class="eyebrow">실습</p>
           <h2>실습 6개</h2>
-          <p class="lead">콜센터 로그 분석까지 여섯 개, 실습마다 목표·활용 기능·예상 산출물이 분명합니다. 카드를 눌러 상세를 확인하세요.</p>
+          <p class="lead">데이터 정의부터 에이전트까지 여섯 개, 실습마다 목표·활용 기능·예상 산출물이 분명합니다. 카드를 눌러 상세를 확인하세요.</p>
         </div>
         <div class="grid grid-2">
           ${LABS.map((l) => labCard(l)).join("")}
