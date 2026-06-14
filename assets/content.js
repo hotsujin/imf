@@ -134,7 +134,7 @@ const LABS = [
   {
     id: "5", no: "실습 5", feature: "나만의 GPT 만들기", dur: "80분", dataKey: "portfolio", data: "portfolio.csv",
     chatUrl: "https://chatgpt.com/share/6a2ec606-0f98-83ee-bcef-6f66e90eff45",
-    title: "나만의 GPT 제작 (데이터 분석 봇)",
+    title: "나만의 GPT 제작 (+Task 예약)",
     purpose: "매번 똑같이 지시하던 분석을, 데이터 스키마·검산 규칙·리포트 양식을 넣은 전용 GPT로 묶어 둡니다. 단순 챗봇이 아니라 우리 데이터를 아는 분석가를 만드는 게 목표입니다.",
     prompt: "상품군별 평균 달성률·총 보유잔액, 달성률 하위 5개 지점을…",
     out: "완성된 데이터 분석 GPT(지침 + 지식파일 3종) · 검증 결과",
@@ -148,7 +148,7 @@ const LABS = [
       { n: "지식파일(Knowledge)", d: "데이터 사전·분석 규칙·리포트 양식 3종을 올려 GPT가 참고하게 합니다." },
       { n: "고급 데이터 분석", d: "GPT 안에서 코드 인터프리터를 켜 검산 규칙을 직접 돌려봅니다." },
     ],
-    deliverables: ["완성된 데이터 분석 GPT(지침 + 지식파일 3종)", "새 데이터로 확인한 검증 결과"],
+    deliverables: ["완성된 데이터 분석 GPT(지침 + 지식파일 3종)", "새 데이터로 확인한 검증 결과", "Task로 정기 자동 실행 예약 설정"],
   },
   {
     id: "6", no: "실습 6", feature: "GPT 에이전트", dur: "80분", dataKey: "portfolio", data: "portfolio.csv (+ 웹)",
