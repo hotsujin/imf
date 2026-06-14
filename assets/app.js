@@ -285,6 +285,12 @@ function labDetailView(id) {
             <a class="btn btn--gold btn--sm" href="#/data/${l.dataKey}">데이터 원본 보기 →</a>
           </div>
           <div class="side-box">
+            <h4>ChatGPT에 넣을 데이터 링크</h4>
+            <p class="side-note">파일을 따로 받을 필요 없습니다. 아래 링크를 복사해 ChatGPT 입력창에 붙여넣고, "이 CSV를 분석해 줘"라고 시켜 보세요.</p>
+            <input style="width:100%;box-sizing:border-box;padding:9px 10px;border:1px solid var(--hairline);border-radius:8px;font-size:12px;color:var(--body);margin-bottom:8px;background:var(--surface)" readonly value="${location.origin}${location.pathname.replace(/[^/]*$/, '')}data/${l.dataKey}.csv" onclick="this.select()">
+            <button class="btn btn--ghost btn--sm" onclick="navigator.clipboard.writeText(this.previousElementSibling.value); this.textContent='복사됨';">링크 복사</button>
+          </div>
+          <div class="side-box">
             <h4>실제 GPT 채팅 보기</h4>
             <p class="side-note">강사가 시연한 실제 대화 링크가 들어갈 자리입니다.</p>
             <button class="btn btn--ghost btn--sm" disabled>준비 중</button>
