@@ -57,7 +57,7 @@ const SCHEDULE = [
 const LABS = [
   {
     id: "1", no: "실습 1", feature: "고급 데이터 분석", dur: "100분", dataKey: "transactions", data: "transactions.csv",
-    chatUrl: "https://chatgpt.com/share/6a2e60bb-5ac4-83e8-940d-dca4be078a28",
+    chatUrl: "https://chatgpt.com/share/6a2ec05c-c79c-83ee-b8a2-0306c1361c57",
     title: "데이터 정의 + 정제·자동화",
     purpose: "분석은 데이터를 정의하는 데서 시작합니다. 가상 N-Bank(20~30대 소액대출 추천 서비스)에 어떤 데이터가 왜 필요한지 먼저 \"데이터 정의서\"로 정리하고, 그 기준에 맞춰 지저분한 거래 데이터를 정제합니다. 매달 반복하는 정리 작업은 다음에도 그대로 쓸 수 있게 스크립트로 남깁니다.",
     prompt: "20~30대 소액대출 추천에 필요한 항목부터 정의서로 정리하고, 그 기준으로 transactions.csv 품질을 진단해줘 — 결측·이상치·단위 혼합·날짜 형식…",
@@ -76,7 +76,7 @@ const LABS = [
   },
   {
     id: "2", no: "실습 2", feature: "고급 데이터 분석", dur: "90분", dataKey: "cleaned_transactions", data: "cleaned_transactions.csv (실습1 정제본)",
-    chatUrl: "",
+    chatUrl: "https://chatgpt.com/share/6a2ec3de-e84c-83e8-9978-9de6c282d0f9",
     title: "소액대출 분석 → 경영진 리포트",
     purpose: "실습1에서 정제한 거래 데이터를 그대로 이어받아, 20~30대를 연령대 세그먼트로 나눠 30일 연체율을 분석합니다. EDA·상관관계·차트로 패턴을 찾아 경영진이 30초에 읽는 1페이지 보고서로 정리하되, AI가 내놓은 숫자는 근거·재현·반증 3단계로 꼭 검증합니다.",
     prompt: "cleaned_transactions.csv에서 연령대 세그먼트(20~24·25~29·30~34·35~39)별 30일 연체율을 분석하고, EDA 요약·상관관계·세그먼트별 차트와 함께 경영진 1페이지 리포트로…",
@@ -95,7 +95,7 @@ const LABS = [
   },
   {
     id: "3", no: "실습 3", feature: "고급 데이터 분석", dur: "60분", dataKey: "callcenter_logs", data: "callcenter_logs.csv",
-    chatUrl: "https://chatgpt.com/share/6a2e6fa5-9cdc-83ee-a0fe-7e1cc6358ed9",
+    chatUrl: "https://chatgpt.com/share/6a2ec58f-0c84-83e8-8019-18b522ccaf82",
     title: "콜센터 상담 로그 분석",
     purpose: "처리시간·만족도 같은 숫자와 상담요약 텍스트가 섞인 콜센터 로그를 함께 분석합니다. 무엇이 불만으로 들어오는지(VOC) 추려 분류하고 한 장짜리 리포트로 정리한 뒤, 같은 분석 흐름을 다른 업무·도메인에도 적용할 수 있게 1페이지 데이터 기획서로 확장하는 게 목표입니다.",
     prompt: "callcenter_logs.csv에서 상담유형 표기부터 통일하고, 유형별 건수·평균 처리시간·평균 만족도를…",
@@ -114,7 +114,7 @@ const LABS = [
   },
   {
     id: "4", no: "실습 4", feature: "웹 브라우징", dur: "60분", dataKey: "disclosures_news", data: "공시·뉴스 URL (+ disclosures_news.csv 보조)",
-    chatUrl: "",
+    chatUrl: "https://chatgpt.com/share/6a2ec772-3cf0-83e8-a1d8-8e578a719221",
     title: "공시·뉴스 수집·구조화",
     purpose: "분석하고 싶은 공시·뉴스 URL을 ChatGPT에 직접 넣어 열게 하고, 발행기관·공시일·핵심 이벤트·예상 영향을 표와 JSON으로 정리합니다. AI가 만든 요약은 반드시 원문과 대조해 사실을 확인합니다.",
     prompt: "아래 공시·뉴스 URL들을 직접 열어 발행기관·공시일·핵심 이벤트·예상 영향·카테고리를 표와 JSON으로 정리하고, 누락은 null로 표기해…",
@@ -133,7 +133,7 @@ const LABS = [
   },
   {
     id: "5", no: "실습 5", feature: "나만의 GPT 만들기", dur: "80분", dataKey: "portfolio", data: "portfolio.csv",
-    chatUrl: "https://chatgpt.com/share/6a2e8d3f-568c-83ee-b0fe-f7c112067581",
+    chatUrl: "https://chatgpt.com/share/6a2ec606-0f98-83ee-bcef-6f66e90eff45",
     title: "나만의 GPT 제작 (데이터 분석 봇)",
     purpose: "매번 똑같이 지시하던 분석을, 데이터 스키마·검산 규칙·리포트 양식을 넣은 전용 GPT로 묶어 둡니다. 단순 챗봇이 아니라 우리 데이터를 아는 분석가를 만드는 게 목표입니다.",
     prompt: "상품군별 평균 달성률·총 보유잔액, 달성률 하위 5개 지점을…",
@@ -152,7 +152,7 @@ const LABS = [
   },
   {
     id: "6", no: "실습 6", feature: "GPT 에이전트", dur: "80분", dataKey: "portfolio", data: "portfolio.csv (+ 웹)",
-    chatUrl: "https://chatgpt.com/share/6a2e8d96-d4fc-83ee-9d28-f9920def6830",
+    chatUrl: "https://chatgpt.com/share/6a2ec653-0c80-83ee-9e2e-e586e69988af",
     title: "GPT 에이전트 (데이터 파이프라인 자동화)",
     purpose: "수집부터 리포트까지 여러 단계를 한 번의 지시로 에이전트에 맡기되, 중간에 사람이 확인할 지점과 검증 점검표를 함께 둡니다. 편한 만큼 어디까지 맡겨도 되는지도 같이 다룹니다.",
     prompt: "정제 → 검산 분리(사람 승인) → 분석 → 리포트를 순서대로…",
